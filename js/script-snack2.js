@@ -13,6 +13,7 @@ bottone.addEventListener('click', getPartyHost);
 
 function getPartyHost() {
     var completeName = namePerson[Math.floor(Math.random() * namePerson.length)] + ' ' + surnamePerson[Math.floor(Math.random() * surnamePerson.length)];
+    listHost.push(completeName);
 
     listHost = document.querySelector('.list').value;
     document.querySelector('.nameList').innerHTML = '';
