@@ -14,23 +14,20 @@ console.log(surnamePerson);
 const bottone = document.getElementById('btnGenerate');
 bottone.addEventListener('click', getPartyHost);
 
+/*La funzione mi aiuta a scegliere gli invitati */
 function getPartyHost() {
-    /*Creo randomicamente gli invitati*/
-    var completeName = namePerson[Math.floor(Math.random() * namePerson.length)] + ' ' + surnamePerson[Math.floor(Math.random() * surnamePerson.length)];
-
     var listHost = document.querySelector('.list').value;
     document.querySelector('.nameList').innerHTML = '';
 
-    for(let a = 1; a < listHost; a++){
-        if(listHost > 10){
-            document.querySelector('.nameList').innerHTML = 'ONLY 10 PEOPLE CAN STAY AT THE PARTY';
-        }
-        else{
-            for(let i = 0; i < listHost; i++){
-                document.querySelector('.nameList').innerHTML += completeName + '<br>';
-            }
+
+    if(listHost > 10){
+        document.querySelector('.nameList').innerHTML = 'ONLY 10 PEOPLE CAN STAY AT THE PARTY';
+    }
+    else{
+        for(let i = 0; i < listHost; i++){
+            /*Creo randomicamente gli invitati e tramite il query selector e l'innerhtml me li metto nell'html*/
+            var completeName = namePerson[Math.floor(Math.random() * namePerson.length)] + ' ' + surnamePerson[Math.floor(Math.random() * surnamePerson.length)];
+            document.querySelector('.nameList').innerHTML += completeName + '<br>';
         }
     }
-    partyHost.push(completeName);
-    console.log(partyHost);
 }
