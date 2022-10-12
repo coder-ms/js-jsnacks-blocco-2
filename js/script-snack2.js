@@ -21,7 +21,6 @@ function getPartyHost() {
     var listHost = document.querySelector('.list').value;
     document.querySelector('.nameList').innerHTML = '';
 
-
     if(listHost > 10){
         document.querySelector('.nameList').innerHTML = 'ONLY 10 PEOPLE CAN STAY AT THE PARTY';
     }
@@ -32,5 +31,5 @@ function getPartyHost() {
             document.querySelector('.nameList').innerHTML += completeName + '<br>';
         }
     }
-    bottone.addEventListener('click', getPartyHost);
 }
+bottone.addEventListener('click', getPartyHost);
