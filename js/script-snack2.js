@@ -3,6 +3,8 @@ var namePerson = ["Charles", "Nick", "Daisy", "Tom", "Jordan", "Myrtle", "George
 var surnamePerson = ["Phillis", "Carraway", "Maguire", "Thompson", "Clarke", "Buchanan", "Fisher",
  "Lewis", "Weiss", "Falk", "Mulvany", "Landsbury", "Stepson", "Simpson", "Mulligan", "Smith","Jackson"];
 
+ var listHost = [];
+
 console.log(namePerson);
 console.log(surnamePerson);
 
@@ -12,7 +14,7 @@ bottone.addEventListener('click', getPartyHost);
 function getPartyHost() {
     var completeName = namePerson[Math.floor(Math.random() * namePerson.length)] + ' ' + surnamePerson[Math.floor(Math.random() * surnamePerson.length)];
 
-    var listHost = document.querySelector('.list').value;
+    listHost = document.querySelector('.list').value;
     document.querySelector('.nameList').innerHTML = '';
     if(listHost > 10){
         document.querySelector('.nameList').innerHTML = 'ONLY 10 PEOPLE CAN STAY AT THE PARTY';
