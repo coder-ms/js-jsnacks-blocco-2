@@ -14,7 +14,7 @@ console.log(surnamePerson);
 
 /*Collegamento bottone genera(HTML) alla funzione JS*/
 const bottone = document.getElementById('btnGenerate');
-bottone.addEventListener('click', getPartyHost);
+
 
 /*La funzione mi aiuta a scegliere gli invitati */
 function getPartyHost() {
@@ -32,4 +32,5 @@ function getPartyHost() {
             document.querySelector('.nameList').innerHTML += completeName + '<br>';
         }
     }
+    bottone.addEventListener('click', getPartyHost);
 }
