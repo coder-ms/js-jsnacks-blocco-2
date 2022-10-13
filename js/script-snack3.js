@@ -20,7 +20,6 @@ function sumEven() {
         if(0x01 & i){
             /*DEBUG: stampo posizioni dispari nell'array*/
             console.log(i);
-
             /* somma numeri in posizione dispari in un array */
             sum += parseInt(array1[i]);
         }

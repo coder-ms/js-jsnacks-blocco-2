@@ -14,19 +14,16 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-snack4.css">
         
     </head>
-    <body>
-        <main>
-            <h1>JSNACK</h1>
-            <ul>
-                <li><a href="snack1.html">Pagina 1</a></li>
-                <li><a href="snack2.html">Pagina 2</a></li>
-                <li><a href="snack3.html">Pagina 3</a></li>
-                <li><a href="snack4.html">Pagina 4</a></li>
-            </ul>
+    <body class="container-lg my-5 d-flex flex-column justify-content-center align-items-center">
+        <a href="index.html">Pagina principale</a>
+        <a href="snack2.html">Pagina successiva</a>
+        <input type="number" id="userNumber" class="my-5 col-3" placeholder="inserisci un numero" min="1" max="1000">
+        <button>Calcola</button>
+        <h1 id="result" class="mt-4"></h1>
 
-        </main>
+        <script src="js/script-snack4.js"></script>
     </body>
 </html>
