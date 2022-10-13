@@ -15,7 +15,7 @@ function printOddNumbers(){
         // console.log('Odd number');
         result.innerHTML = 'Odd number';
     }
-    /*Se il numero è dispari, si stampa quello successivo(qui entr in gioco il ++)*/
+    /*Se il numero è dispari, si stampa quello successivo(qui entra in gioco il ++)*/
     else if(oddNumber == 1){
         //console.log('Even Number')
         oddNumber = moduloOperation;
@@ -25,7 +25,7 @@ function printOddNumbers(){
         result.innerHTML = oddNumber;
     }
     /* In caso che l'ultente abbia inserito fosse Nan(Not a number) o un numero decimale(float) */
-    else {
+    else if(oddNumber == NaN){
         // console.log("That's an even number");
         result.innerHTML = "That's a Nan or a float number";
     }  
