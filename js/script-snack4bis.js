@@ -2,7 +2,7 @@
 
 /*Array di nomi e cognomi per creare invitati*/
 var namePerson = ["Charles", "Nick", "Daisy", "Tom", "Jordan", "Myrtle", "George", "Meye", "Walter",
- "Henry", "Catherine", "August", "James", "Fred", "Laura", "William","Elizabth"];
+ "Henry", "Catherine", "August", "James", "Fred", "Laura", "William","Elizabeth"];
 var surnamePerson = ["Phillis", "Carraway", "Maguire", "Thompson", "Clarke", "Buchanan", "Fisher",
  "Lewis", "Weiss", "Falk", "Mulvany", "Landsbury", "Stepson", "Simpson", "Mulligan", "Smith","Jackson"];
 
