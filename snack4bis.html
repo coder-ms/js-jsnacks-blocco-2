@@ -14,19 +14,33 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">
+        <!--<link rel="stylesheet" href="css/style-snack4.css">-->
         
     </head>
-    <body>
-        <main>
-            <h1>JSNACK</h1>
-            <ul>
-                <li><a href="snack1.html">Pagina 1</a></li>
-                <li><a href="snack2.html">Pagina 2</a></li>
-                <li><a href="snack3.html">Pagina 3</a></li>
-                <li><a href="snack4.html">Pagina 4</a></li>
-                <li><a href="snack4bis.html">Pagina 4bis</a></li>
-            </ul>
-        </main>
+    <body class="container-lg my-5 d-flex flex-column justify-content-center align-items-center">
+        <a href="index.html">Pagina principale</a>
+        <a href="snack4.html">Pagina precedente</a>
+
+        <h1 class="text-center my-5">WITH WHILE CYCLE</h1>
+        <div class="container-lg d-flex flex-column justify-content-center align-items-center">
+            <br>
+            <h4>JAY GASTBY'S PARTY LIST</h4>
+            
+            <div class="form">
+                <input type="number" class="list" min="1" max="100">
+                <button id="btnGenerate">GENERATE</button>
+            </div>
+            <div class="nameBox container-lg d-flex flex-column justify-content-center align-items-center">
+                <br>
+                <h5>PEOPLE INVITED TO JAY GATSBY'S ESCLUSIVE PARTY</h5>
+                <span class="nameList">
+                    PEOPLE IN LIST
+                </span>
+            </div>
+        </div>
+        <br>
+        <img class="w-50 container-lg d-flex flex-column justify-content-center align-items-center" src="img/gastby.jpg" alt="gastby">  
+
+        <script src="js/script-snack4bis.js"></script>
     </body>
 </html>

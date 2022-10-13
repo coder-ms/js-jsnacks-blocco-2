@@ -20,16 +20,24 @@ const bottone = document.getElementById('btnGenerate');
 function getPartyHost() {
     var listHost = document.querySelector('.list').value;
     document.querySelector('.nameList').innerHTML = '';
-
+    let i=0;
+    
     if(listHost > 10){
+        /*Il metodo querySelector() restituisce il primo elemento che corrisponde a un selettore CSS.*/
         document.querySelector('.nameList').innerHTML = 'ONLY 10 PEOPLE CAN STAY AT THE PARTY';
     }
     else{
-        for(let i = 0; i < listHost; i++){
+        while(i < listHost){
+
+            /* eseguo azione */
             /*Creo randomicamente gli invitati e tramite il query selector e l'innerhtml me li metto nell'html*/
             var completeName = namePerson[Math.floor(Math.random() * namePerson.length)] + ' ' + surnamePerson[Math.floor(Math.random() * surnamePerson.length)];
             document.querySelector('.nameList').innerHTML += completeName + '<br>'; 
+
+            /*Incremento i per non creare un ciclo while infinito*/
+            i++;
         }
+
     }
 }
 bottone.addEventListener('click', getPartyHost);
